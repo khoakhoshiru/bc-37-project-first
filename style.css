@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+header {
+}
+.nav-bar {
+  background-color: #000;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+.navbar .navbar-expand-lg .bg-light {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.navbar-brand {
+  color: #189a46;
+  margin: 0;
+  padding: 0;
+  font-size: 34px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #189a46;
+}
+.collapse .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+  flex-grow: 1;
+  align-items: center;
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+  position: relative;
+  border-width: 0%;
+  padding: 0 10px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  padding: 14px 0;
+  font-size: 1.2em;
+  font-weight: 400;
+  position: relative;
+  color: var(--heading-color);
+}
+
+.navbar-nav {
+  margin-left: auto !important;
+}
+.navbar-nav .nav-link {
+  color: #189a46;
+}
+.nav-link .active {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.nav-item {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.nav-link .active {
+  color: #000;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  padding: 14px 0;
+  font-size: 1.2em;
+  font-weight: 400;
+  position: relative;
+  color: black;
+}
+a.nav-link:before,
+a.dropdown-item:before {
+  position: absolute;
+  content: "";
+  background: #189a46;
+  width: 0px;
+  height: 1px;
+  bottom: 13px;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover:before,
+a.dropdown-item:hover:before {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+/* .nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+} */
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #189a46;
+}
