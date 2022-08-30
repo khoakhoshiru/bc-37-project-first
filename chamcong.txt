@@ -1,0 +1,11 @@
+nhóm 13 :Nguyễn Lê Anh Khoa && Trần Quốc Bảo 
+chấm công :
+Nguyễn Lê Anh Khoa :
++làm trang home 
++làm trang blog post
++ link + púsh git record
+Trần Quốc Bảo
++ làm trang about
++làm tràn gallery
++ service 
++ contact

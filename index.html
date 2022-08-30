@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pouch website/home page</title>
+    <link rel="stylesheet" href="./index.js" />
+    <link rel="stylesheet" href="
+    <link
+      rel="stylesheet"
+      href="/fancybox/jquery.fancybox-1.3.4.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"
@@ -23,10 +35,18 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/@popperjs/core@2" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="header wow">
+    <!-- p,m:padding,margin (x,y) 
+      sm,md,lg+col-(12/use) kich thuoc
+    component = ggdich >boostrap +copy -->
+    <div class="header">
       <div class="nav-bar">
         <div class="container">
           <!-- phan nav o dday -->
@@ -52,10 +72,13 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="./about.html">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="./services.html">service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html">gallery</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
@@ -65,19 +88,20 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Dropdown link
+                      Blog
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">blog post </a></li>
                       <li>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">blog section</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
+                        <a class="dropdown-item" href="#">landing page</a>
                       </li>
                     </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -89,15 +113,11 @@
 
     <!-- git status de xem trang thai -->
     <section class="carousel">
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-bs-ride="false"
-      >
+      <div id="carousel-1" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
           <button
             type="button"
-            data-bs-target="#carouselExampleCaptions"
+            data-bs-target="#carousel-1"
             data-bs-slide-to="0"
             class="active"
             aria-current="true"
@@ -105,20 +125,20 @@
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleCaptions"
+            data-bs-target="#carousel-1"
             data-bs-slide-to="1"
-            aria-label="Slide 2"
+            aria-label="Slide-2"
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleCaptions"
+            data-bs-target="#carousel-1"
             data-bs-slide-to="2"
-            aria-label="Slide 3"
+            aria-label="Slide-3"
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="." class="d-block w-100" alt="..." />
+          <div class="carousel-item slide-1 active">
+            <img src="./img/banner1 (1).jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>
@@ -126,8 +146,8 @@
               </p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+          <div class="carousel-item slide-2">
+            <img src="./img/banner2.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>
@@ -135,8 +155,8 @@
               </p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+          <div class="carousel-item slide-3">
+            <img src="./img/banner3.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>
@@ -148,7 +168,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carousel-1"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -157,7 +177,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carousel-1"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -165,15 +185,528 @@
         </button>
       </div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="aboutus py-5" id="about">
+      <div class="container py-md-5 py-3">
+        <div class="bottom-ab-grids align-items-center">
+          <h4>About us</h4>
+          <h2>We are love pet Like They Are Our Own</h2>
+          <p class="my-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            laudantium obcaecati ut quia voluptatibus <br />illo incidunt minima
+            dolor maiores voluptas eaque quis, nesciunt quos maxime ex nobis et
+            non quae!
+          </p>
+          <a href="#" class="read">read more</a>
+        </div>
+      </div>
+    </section>
+    <!-- section use grid -->
+
+    <section class="service py-5">
+      <div class="container py-md-4 py-lg-5">
+        <div class="all-service grids-area-hny main-cont-wthree-fea row">
+          <div class="col-lg-4 col-sm-6 mt-sm-0 mt-lg0">
+            <div class="box">
+              <div class="icon">
+                <span class="fa-solid fa-snowflake"></span>
+              </div>
+              <h4 class="title">Dog-walking</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio, eius itaque harum voluptatum blanditiis praesentium
+                at suscipit provident.
+              </p>
+              <a class="read" href=""> readmore </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mt-sm-0 mt-lg0">
+            <div class="box">
+              <div class="icon">
+                <span class="fa-solid fa-utensils"></span>
+              </div>
+              <h4 class="title">heathy meals</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio, eius itaque harum voluptatum blanditiis praesentium
+                at suscipit provident.
+              </p>
+              <a class="read" href=""> readmore </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mt-sm-0 mt-lg0">
+            <div class="box">
+              <div class="icon">
+                <span class="fa fa-solid fa-hand"></span>
+              </div>
+              <h4 class="title">pet siting</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio, eius itaque harum voluptatum blanditiis praesentium
+                at suscipit provident.
+              </p>
+              <a class="read" href=""> readmore </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mt-sm-0 mt-lg0">
+            <div class="box">
+              <div class="icon">
+                <span class=""><i class="fa-solid fa-sitemap"></i></span>
+              </div>
+              <h4 class="title">dog activities</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio, eius itaque harum voluptatum blanditiis praesentium
+                at suscipit provident.
+              </p>
+              <a class="read" href=""> readmore </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mt-sm-0 mt-lg0">
+            <div class="box">
+              <div class="icon">
+                <span><i class="fa-solid fa-shower"></i></span>
+              </div>
+              <h4 class="title">pet day care</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio, eius itaque harum voluptatum blanditiis praesentium
+                at suscipit provident.
+              </p>
+              <a class="read" href=""> readmore </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mt-sm-0 mt-lg0">
+            <div class="box">
+              <div class="icon">
+                <span class="fa-solid fa-user-doctor"></span>
+              </div>
+              <h4 class="title">pet Grooming</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio, eius itaque harum voluptatum blanditiis praesentium
+                at suscipit provident.
+              </p>
+              <a class="read" href=""> readmore </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experiment">
+      <div class="container py-5">
+        <div class="content-exp">
+          <div class="img col-lg-6 pl-lg-5 mb-lg-0 mb-5">
+            <img src="./img/ab.jpg" alt="" srcset="" />
+          </div>
+          <div class="text-exp col-lg-6">
+            <h5 class="mini-title">Why choose us</h5>
+            <h3 class="lagre-title">What we offer you</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repudiandae, corporis. Blanditiis facere at est quasi alias
+              numquam cupiditate tempore aliquid?
+            </p>
+            <div class="list-exp">
+              <li><span class="fa fa-check"></span>Certified Groomer</li>
+              <li><span class="fa fa-check"></span>10 Years of Experience</li>
+              <li><span class="fa fa-check"></span>Pet Lover</li>
+              <li><span class="fa fa-check"></span>Customer Supports</li>
+              <li><span class="fa fa-check"></span>Veterinary Help</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="achievement py-5" id="achievement">
+      <div class="container py-lg-0 py-3">
+        <div class="row-achi pb-lg-0 py-3">
+          <div class="col-achi">
+            <p class="count">730</p>
+            <h4>Happy Clients</h4>
+          </div>
+          <div class="col-achi">
+            <p class="count">80</p>
+            <h4>Professionals</h4>
+          </div>
+          <div class="col-achi">
+            <p class="count">812</p>
+            <h4>Adopted Pets</h4>
+          </div>
+          <div class="col-achi">
+            <p class="count">90</p>
+            <h4>Awards</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="plan py-5 pt-lg-4 pt-md-3 pb-lg-5 pb-md-4" id="plan">
+      <div class="space-plan">
+        <div class="container pricing-grid">
+          <div class="heading-text text-center mx-auto">
+            <h5 class="mini-title">Our Plans</h5>
+            <h3 class="lagre-title">Affordable Packages</h3>
+          </div>
+          <div class="all-plan">
+            <div class="plan-col">
+              <div class="plan-col_space">
+                <div class="plan-col_top">
+                  <h6 class="one-light">Free pack</h6>
+                  <h4>
+                    <lable>$</lable>0
+                    <span>/month </span>
+                  </h4>
+                </div>
+                <div class="plan-col_bottom">
+                  <div class="plan_space-bottom">
+                    <div class="link">
+                      <li>5 Dog Walk</li>
+                      <li>3 Vet Visit</li>
+                      <li>3 Vet spa</li>
+                      <li>Free Supports</li>
+                      <li>Customer Support</li>
+                    </div>
+                  </div>
+                </div>
+                <div class="buy-button">
+                  <a href="#buy" class="popup btn btn-style btn-primary"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="plan-col active">
+              <div class="plan-col_space active">
+                <div class="plan-col_top active">
+                  <h5>10% save</h5>
+                  <h6 class="one-light">Standard Package</h6>
+                  <h4>
+                    <lable>$</lable>0
+                    <span>/month</span>
+                  </h4>
+                </div>
+                <div class="plan-col_bottom">
+                  <div class="plan_space-bottom">
+                    <div class="link">
+                      <li>5 Dog Walk</li>
+                      <li>3 Vet Visit</li>
+                      <li>3 Vet spa</li>
+                      <li>Free Supports</li>
+                      <li>Customer Support</li>
+                    </div>
+                  </div>
+                </div>
+                <div class="buy-button">
+                  <a href="#buy" class="popup btn btn-style btn-primary"
+                    >get started</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="plan-col">
+              <div class="plan-col_space">
+                <div class="plan-col_top">
+                  <h6 class="one-light">Pro Package</h6>
+                  <h4>
+                    <lable>$</lable>0
+                    <span>/month</span>
+                  </h4>
+                </div>
+                <div class="plan-col_bottom">
+                  <div class="plan_space-bottom">
+                    <div class="link">
+                      <li>5 Dog Walk</li>
+                      <li>3 Vet Visit</li>
+                      <li>3 Vet spa</li>
+                      <li>Free Supports</li>
+                      <li>Customer Support</li>
+                    </div>
+                  </div>
+                </div>
+                <div class="buy-button">
+                  <a href="#buy" class="popup btn btn-style btn-primary"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="video" id="video ">
+      <div class="block-video py5">
+        <div class="container py-lg-5 col-sm-12">
+          <div class="content-video text-center">
+            <div class="text-video">
+              <h6 class="mini-title text-center">Better pet nutrition.</h6>
+              <h3 class="lagre-title">
+                The finest fresh food and all your pet needs.
+              </h3>
+              <p class="mt-3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem
+                ipsum dolor sit amet elit consec tetur adipisi elit.Lorem ipsum
+                dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus
+                explicabo officia.
+              </p>
+            </div>
+            <div class="video-screen">
+              <a class="iframe" href="https://player.vimeo.com/video/101587706"><div class="video-thumbnail position-relative">
+                <img
+                  id="video"
+                  src="./img/banner2.jpg"
+                  class="img-fluid radius-image video-popup-image"
+                  alt="video-popup"
+                />
+                <a
+                  href="https://player.vimeo.com/video/101587706"
+                  class="popup-with-zoom-anim play-view text-center position-absolute"
+                >
+                  <span class="video-play-icon">
+                    <span class="fa fa-play"></span>
+                  </span>
+                </a>
+                
+              </div></a>
+                
+              </a>
+            </div>
+            <a class="iframe" href="https://player.vimeo.com/video/101587706"><img src="https://www.google.com/imgres?imgurl=https%3A%2F%2F2sao.vietnamnetjsc.vn%2Fimages%2F2022%2F06%2F24%2F14%2F42%2Fdat-villa-4.jpg&imgrefurl=https%3A%2F%2F2sao.vn%2Flo-anh-dat-villa-thoi-nguyen-phen-n-311026.html&tbnid=3kSw1Jc4SJWwPM&vet=12ahUKEwj84aGK_un5AhWTA6YKHZBACssQMygGegUIARDNAQ..i&docid=CDBt12Y0I-IhMM&w=480&h=640&q=dat%20villa&ved=2ahUKEwj84aGK_un5AhWTA6YKHZBACssQMygGegUIARDNAQ" alt="" srcset=""></a>
+            <!-- <div class="video-thumbnail position-relative">
+              <img
+                id="video"
+                src="./img/banner2.jpg"
+                class="img-fluid radius-image video-popup-image"
+                alt="video-popup"
+              />
+              <a
+                href="#small-dialog"
+                class="popup-with-zoom-anim play-view text-center position-absolute"
+              >
+                <span class="video-play-icon">
+                  <span class="fa fa-play"></span>
+                </span>
+              </a>
+              <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                <a
+                  class="iframe"
+                  href="https://player.vimeo.com/video/101587706"
+                  ><iframe
+                    src=""
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen=""
+                  ></iframe>
+                </a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback" id ="feedback">
+      <div class="feed-layout py-5">
+        <div class="container py-lg-4 py-md-3 pb-lg-0">
+          <div class="heading-text text-center mx-auto">
+            <h5 class="mini-title text-center">Testimonials</h5>
+            <h3 class="lagre-title mb-md-5 mb-4">Happy Clients & Feedbacks</h3>
+          </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button   type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- chổ này để làm s -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+<div class="main-feed">
+  <div class="main-col">
+    <div class="main-box">
+      <div class="feed-text">
+        <i></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vel in possimus laudantium aspernatur praesentium sed,<br> consequatur sit autem aperiam quos? Illo, ipsa dolorem!</p>
+      </div>
+      <div class="customer">
+        <div class="img-customer">
+          <img src="./img/f1.jpg" alt="" srcset="">
+        </div> 
+
+        </div>
+        <div class="textcustomer">
+          <h3>Quốc Bảo</h3>
+          <p class="text-opa">Sai Gon</p>
+        </div>
+      </div>
+    </div>
+  
+  <div class="main-col">
+    <div class="main-box">
+      <div class="feed-text">
+        <i></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vel in possimus laudantium aspernatur praesentium sed,<br> consequatur sit autem aperiam quos? Illo, ipsa dolorem!</p>
+      </div>
+      <div class="customer">
+        <div class="img-customer">
+          <img src="./img/f1.jpg" alt="" srcset="">
+        </div> 
+
+        </div>
+        <div class="text-customer">
+          <h3>Quốc Bảo</h3>
+          <p class="text-opa">Sai Gon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="carousel-item">
+<div class="main-feed">
+  <div class="main-col">
+    <div class="main-box">
+      <div class="feed-text">
+        <i></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vel in possimus laudantium aspernatur praesentium sed,<br> consequatur sit autem aperiam quos? Illo, ipsa dolorem!</p>
+      </div>
+      <div class="customer">
+        <div class="img-customer">
+          <img src="./img/f1.jpg" alt="" srcset="">
+        </div> 
+
+        </div>
+        <div class="text-customer">
+          <h3>Quốc Bảo</h3>
+          <p class="text-opa">Sai Gon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-col">
+    <div class="main-box">
+      <div class="feed-text">
+        <i></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vel in possimus laudantium aspernatur praesentium sed,<br> consequatur sit autem aperiam quos? Illo, ipsa dolorem!</p>
+      </div>
+      <div class="customer">
+        <div class="img-customer">
+          <img src="./img/f1.jpg" alt="" srcset="">
+        </div> 
+
+        <div class="text-customer">
+          <h3>Quốc Bảo</h3>
+          <p class="text-opa">Sai Gon</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="carousel-item">
+<div class="main-feed">
+  <div class="main-col">
+    <div class="main-box">
+      <div class="feed-text">
+        <i></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vel in possimus laudantium aspernatur praesentium sed,<br> consequatur sit autem aperiam quos? Illo, ipsa dolorem!</p>
+      </div>
+      <div class="customer">
+        <div class="img-customer">
+          <img src="./img/f1.jpg" alt="" srcset="">
+        </div> 
+
+        </div>
+        <div class="text-customer">
+          <h3>Quốc Bảo</h3>
+          <p class="text-opa">Sai Gon</p>
+        </div>
+      </div>
+    </div>
+    <div class="main-col">
+  </div>
+    <div class="main-box">
+      <div class="feed-text">
+        <i></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vel in possimus laudantium aspernatur praesentium sed,<br> consequatur sit autem aperiam quos? Illo, ipsa dolorem!</p>
+      </div>
+      <div class="customer">
+        <div class="img-customer">
+          <img src="./img/f1.jpg" alt="" srcset="">
+        </div> 
+
+        </div>
+        <div class="text-customer">
+          <h3>Quốc Bảo</h3>
+          <p class="text-opa">Sai Gon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+        </div>
+
+      </div>
+
+
+    </section>
     <!-- js  -->
     <script src="./wow.js"></script>
     <script>
       new WOW().init();
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/fancybox/jquery.fancybox-1.3.4.pack.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        /* This is basic - uses default settings */ $(
+          "a#single_image"
+        ).fancybox();
+        /* Using custom settings */ $("a#inline").fancybox({
+          hideOnContentClick: true,
+        });
+        /* Apply fancybox to multiple items */ $("a.group").fancybox({
+          transitionIn: "elastic",
+          transitionOut: "elastic",
+          speedIn: 600,
+          speedOut: 200,
+          overlayShow: false,
+        });
+      });
+
+      //for iframe
+      $(".iframe").fancybox();
     </script>
     <!-- 
       git flow 

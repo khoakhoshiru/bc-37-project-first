@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header id="site-header" class="fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg stroke">
+          <h1><a class="navbar-brand" href="index.html"> Pooch Care </a></h1>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown1"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Blog<span class="fa fa-angle-down"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="blog.html">Blog Posts</a>
+                  <a class="dropdown-item" href="blog-single.html"
+                    >Blog single</a
+                  >
+                  <a class="dropdown-item" href="landing-single.html"
+                    >Landing Page</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-position">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="mode-container">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="about-breadcrumb text-center">
+      <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+        <div class="container py-2">
+          <h2 class="title">Contact Us</h2>
+          <ul class="breadcrumbs-custom-path mt-2">
+            <li><a href="#">Home</a></li>
+            <li class="active">
+              <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>
+              Contact
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-1 pt-5" id="contact">
+      <div class="contacts-9 pt-lg-4">
+        <h5 class="sub-title text-center mb-2">Find Us</h5>
+        <h3 class="hny-title text-center mb-5">Get in Touch With us</h3>
+        <div class="container pb-lg-4">
+          <div class="d-grid contact-viewhny">
+            <div class="map-content-9 mt-lg-0 mt-md-4 mt-2">
+              <form action="#" method="post">
+                <div class="twice-two">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="Name"
+                    id="Name"
+                    placeholder="Name"
+                    required=""
+                  />
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="Sender"
+                    id="Sender"
+                    placeholder="Email"
+                    required=""
+                  />
+                </div>
+                <div class="twice">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="Subject"
+                    id="Subject"
+                    placeholder="Subject"
+                    required=""
+                  />
+                </div>
+                <textarea
+                  name="Message"
+                  class="form-control"
+                  id="Message"
+                  placeholder="Message"
+                  required=""
+                ></textarea>
+                <button type="submit" class="btn btn-style btn-primary mt-4">
+                  Send Message
+                </button>
+              </form>
+            </div>
+            <div class="cont-detailshnyf mt-lg-0 mt-4">
+              <div class="cont-tophny">
+                <div class="cont-left text-center">
+                  <span class="fa fa-map-marker text-primary"></span>
+                </div>
+                <div class="cont-right">
+                  <h6>Address</h6>
+                  <p>Thành phố Hồ Chí Minh, Việt Nam</p>
+                </div>
+              </div>
+              <div class="cont-tophny margin-up">
+                <div class="cont-left text-center">
+                  <span class="fa fa-phone text-primary"></span>
+                </div>
+                <div class="cont-right">
+                  <h6>Telephone</h6>
+                  <p><a href="#">0834114282</a></p>
+                </div>
+              </div>
+              <div class="cont-tophny margin-up">
+                <div class="cont-left text-center">
+                  <span class="fa fa-envelope-o text-primary"></span>
+                </div>
+                <div class="cont-right">
+                  <h6>Email Us</h6>
+                  <p><a href="#" class="mail">tranquocbao@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-iframe mt-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62712.156034132975!2d106.61392533125!3d10.7722154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fca39e3b493%3A0x865af6a617c57d82!2sCyberSoft%20Academy!5e0!3m2!1svi!2s!4v1661660099822!5m2!1svi!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <footer class="footer-28">
+        <div class="footer-bg-layer">
+          <div class="container py-lg-3">
+            <div class="row footer-top-28">
+              <div class="col-lg-6 col-md-5 footer-list-28 mt-5">
+                <h6 class="footer-title-28">Contact information</h6>
+                <ul>
+                  <li>
+                    <p><strong>Address</strong> : CyberSoft</p>
+                  </li>
+                  <li>
+                    <p><strong>Phone</strong> : <a href="#">0834114282</a></p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Email</strong> :
+                      <a href="#">tranquocbao@mail.com</a>
+                    </p>
+                  </li>
+                </ul>
+
+                <div class="main-social-footer-28 mt-3">
+                  <ul class="social-icons">
+                    <li class="facebook">
+                      <a href="#" title="Facebook">
+                        <span class="fa fa-facebook" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                    <li class="twitter">
+                      <a href="#" title="Twitter">
+                        <span class="fa fa-twitter" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                    <li class="dribbble">
+                      <a href="#" title="Dribbble">
+                        <span class="fa fa-dribbble" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                    <li class="google">
+                      <a href="#" title="Google">
+                        <span class="fa fa-google" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <div class="row">
+                  <div class="col-sm-4 col-6 footer-list-28 mt-5">
+                    <h6 class="footer-title-28">Company</h6>
+                    <ul>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="blog.html">Blog Posts</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 col-6 footer-list-28 mt-5">
+                    <h6 class="footer-title-28">Quick Links</h6>
+                    <ul>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="#">Create account</a></li>
+                      <li><a href="#">Care Center</a></li>
+                      <li><a href="#">Site Feedack</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 footer-list-28 mt-5">
+                    <h6 class="footer-title-28">Support</h6>
+                    <ul>
+                      <li><a href="#">All Dogs</a></li>
+                      <li><a href="#">Care Advices</a></li>
+                      <li><a href="#">Care Support</a></li>
+                      <li><a href="#">Veterinary Help</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="midd-footer-28 align-center py-lg-4 py-3 mt-5">
+            <div class="container">
+              <p class="copy-footer-28 text-center">
+                &copy; 2022 Pooch Care. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
