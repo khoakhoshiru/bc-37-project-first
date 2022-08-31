@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header id="site-header" class="fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg stroke">
+          <h1><a class="navbar-brand" href="index.html"> Pooch Care </a></h1>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown1"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Blog<span class="fa fa-angle-down"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="blog.html">Blog Posts</a>
+                  <a class="dropdown-item" href="blog-single.html"
+                    >Blog single</a
+                  >
+                  <a class="dropdown-item" href="landing-single.html"
+                    >Landing Page</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-position">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="mode-container">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="about-breadcrumb text-center">
+      <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+        <div class="container py-2">
+          <h2 class="title">Blog post</h2>
+          <ul class="breadcrumbs-custom-path mt-2">
+            <li><a href="#url">Home</a></li>
+            <li class="active">
+              <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>
+              Blog Post
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-8 py-5">
+      <div class="portfolio-main py-md-4 py-3">
+        <div class="container">
+          <div class="header-section text-center mx-auto">
+            <h6 class="sub-title">View Gallery</h6>
+            <h3 class="hny-title">Latest Gallery</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 item">
+              <div class="card">
+                <div class="card-header p-0 position-relative">
+                  <a href="blog-single.html">
+                    <img
+                      class="card-img-bottom d-block"
+                      src="./images/g1.jpg"
+                      alt="Card image cap"
+                    />
+                  </a>
+                </div>
+                <div class="card-body blog-details">
+                  <a href="blog-single.html" class="blog-desc"
+                    >Delivering happiness for Pets</a
+                  >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                    eligendi vitae sit.
+                  </p>
+                  <div class="author align-items-center mt-3 mb-1">
+                    <a href="#author">Johnson smith</a> -
+                    <span class="meta-value"> May 23, 2020 </span>
+                  </div>
+                  <ul class="blog-meta">
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-comment"></span> 30 comments</span
+                      >
+                    </li>
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-eye"></span> 30 Views</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 item mt-md-0 mt-5">
+              <div class="card">
+                <div class="card-header p-0 position-relative">
+                  <a href="blog-single.html">
+                    <img
+                      class="card-img-bottom d-block"
+                      src="./images/g2.jpg"
+                      alt="Card image cap"
+                    />
+                  </a>
+                </div>
+                <div class="card-body blog-details">
+                  <a href="blog-single.html" class="blog-desc"
+                    >Delivering happiness for Pets
+                  </a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                    eligendi vitae sit.
+                  </p>
+                  <div class="author align-items-center mt-3 mb-1">
+                    <a href="#author">Johnson smith</a> -
+                    <span class="meta-value"> May 23, 2020 </span>
+                  </div>
+                  <ul class="blog-meta">
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-comment"></span> 30 comments</span
+                      >
+                    </li>
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-eye"></span> 30 Views</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 item mt-lg-0 mt-5">
+              <div class="card">
+                <div class="card-header p-0 position-relative">
+                  <a href="blog-single.html">
+                    <img
+                      class="card-img-bottom d-block"
+                      src="./images/g3.jpg"
+                      alt="Card image cap"
+                    />
+                  </a>
+                </div>
+                <div class="card-body blog-details">
+                  <a href="blog-single.html" class="blog-desc"
+                    >Delivering happiness for Pets
+                  </a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                    eligendi vitae sit.
+                  </p>
+                  <div class="author align-items-center mt-3 mb-1">
+                    <a href="#author">Johnson smith</a> -
+                    <span class="meta-value"> May 23, 2020 </span>
+                  </div>
+                  <ul class="blog-meta">
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-comment"></span> 30 comments</span
+                      >
+                    </li>
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-eye"></span> 30 Views</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 item mt-5 pt-lg-3">
+              <div class="card">
+                <div class="card-header p-0 position-relative">
+                  <a href="blog-single.html">
+                    <img
+                      class="card-img-bottom d-block"
+                      src="./images/g4.jpg"
+                      alt="Card image cap"
+                    />
+                  </a>
+                </div>
+                <div class="card-body blog-details">
+                  <a href="blog-single.html" class="blog-desc"
+                    >Delivering happiness for Pets
+                  </a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                    eligendi vitae sit.
+                  </p>
+                  <div class="author align-items-center mt-3 mb-1">
+                    <a href="#author">Johnson smith</a> -
+                    <span class="meta-value"> May 23, 2020 </span>
+                  </div>
+                  <ul class="blog-meta">
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-comment"></span> 30 comments</span
+                      >
+                    </li>
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-eye"></span> 30 Views</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 item mt-5 pt-lg-3">
+              <div class="card">
+                <div class="card-header p-0 position-relative">
+                  <a href="blog-single.html">
+                    <img
+                      class="card-img-bottom d-block"
+                      src="./images/g5.jpg"
+                      alt="Card image cap"
+                    />
+                  </a>
+                </div>
+                <div class="card-body blog-details">
+                  <a href="blog-single.html" class="blog-desc"
+                    >Delivering happiness for Pets
+                  </a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                    eligendi vitae sit.
+                  </p>
+                  <div class="author align-items-center mt-3 mb-1">
+                    <a href="#author">Johnson smith</a> -
+                    <span class="meta-value"> May 23, 2020 </span>
+                  </div>
+                  <ul class="blog-meta">
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-comment"></span> 30 comments</span
+                      >
+                    </li>
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-eye"></span> 30 Views</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 item mt-5 pt-lg-3">
+              <div class="card">
+                <div class="card-header p-0 position-relative">
+                  <a href="blog-single.html">
+                    <img
+                      class="card-img-bottom d-block"
+                      src="./images/g6.jpg"
+                      alt="Card image cap"
+                    />
+                  </a>
+                </div>
+                <div class="card-body blog-details">
+                  <a href="blog-single.html" class="blog-desc"
+                    >Delivering happiness for Pets
+                  </a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                    eligendi vitae sit.
+                  </p>
+                  <div class="author align-items-center mt-3 mb-1">
+                    <a href="#author">Johnson smith</a> -
+                    <span class="meta-value"> May 23, 2020 </span>
+                  </div>
+                  <ul class="blog-meta">
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-comment"></span> 30 comments</span
+                      >
+                    </li>
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-eye"></span> 30 Views</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 item mt-5 pt-lg-3">
+              <div class="card">
+                <div class="card-header p-0 position-relative">
+                  <a href="blog-single.html">
+                    <img
+                      class="card-img-bottom d-block"
+                      src="./images/g7.jpg"
+                      alt="Card image cap"
+                    />
+                  </a>
+                </div>
+                <div class="card-body blog-details">
+                  <a href="blog-single.html" class="blog-desc"
+                    >Delivering happiness for Pets
+                  </a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                    eligendi vitae sit.
+                  </p>
+                  <div class="author align-items-center mt-3 mb-1">
+                    <a href="#author">Johnson smith</a> -
+                    <span class="meta-value"> May 23, 2020 </span>
+                  </div>
+                  <ul class="blog-meta">
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-comment"></span> 30 comments</span
+                      >
+                    </li>
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-eye"></span> 30 Views</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 item mt-5 pt-lg-3">
+              <div class="card">
+                <div class="card-header p-0 position-relative">
+                  <a href="blog-single.html">
+                    <img
+                      class="card-img-bottom d-block"
+                      src="./images/g8.jpg"
+                      alt="Card image cap"
+                    />
+                  </a>
+                </div>
+                <div class="card-body blog-details">
+                  <a href="blog-single.html" class="blog-desc"
+                    >Delivering happiness for Pets
+                  </a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                    eligendi vitae sit.
+                  </p>
+                  <div class="author align-items-center mt-3 mb-1">
+                    <a href="#author">Johnson smith</a> -
+                    <span class="meta-value"> May 23, 2020 </span>
+                  </div>
+                  <ul class="blog-meta">
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-comment"></span> 30 comments</span
+                      >
+                    </li>
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-eye"></span> 30 Views</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 item mt-5 pt-lg-3">
+              <div class="card">
+                <div class="card-header p-0 position-relative">
+                  <a href="blog-single.html">
+                    <img
+                      class="card-img-bottom d-block"
+                      src="./images/g9.jpg"
+                      alt="Card image cap"
+                    />
+                  </a>
+                </div>
+                <div class="card-body blog-details">
+                  <a href="blog-single.html" class="blog-desc"
+                    >Delivering happiness for Pets
+                  </a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                    eligendi vitae sit.
+                  </p>
+                  <div class="author align-items-center mt-3 mb-1">
+                    <a href="#author">Johnson smith</a> -
+                    <span class="meta-value"> May 23, 2020 </span>
+                  </div>
+                  <ul class="blog-meta">
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-comment"></span> 30 comments</span
+                      >
+                    </li>
+                    <li class="meta-item blog-students">
+                      <span class="meta-value">
+                        <span class="fa fa-eye"></span> 30 Views</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <footer class="footer-28">
+        <div class="footer-bg-layer">
+          <div class="container py-lg-3">
+            <div class="row footer-top-28">
+              <div class="col-lg-6 col-md-5 footer-list-28 mt-5">
+                <h6 class="footer-title-28">Contact information</h6>
+                <ul>
+                  <li>
+                    <p>
+                      <strong>Address</strong> : Đường số 10 ,khu tổ hợp City
+                      Land Phan Văn Trị ,Gò Vấp
+                    </p>
+                  </li>
+                  <li>
+                    <p><strong>Phone</strong> : <a href="#">0834114282</a></p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Email</strong> :
+                      <a href="#">nguyenleanhkhoa@mail.com</a>
+                    </p>
+                  </li>
+                </ul>
+
+                <div class="main-social-footer-28 mt-3">
+                  <ul class="social-icons">
+                    <li class="facebook">
+                      <a href="#" title="Facebook">
+                        <span class="fa fa-facebook" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                    <li class="twitter">
+                      <a href="#" title="Twitter">
+                        <span class="fa fa-twitter" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                    <li class="dribbble">
+                      <a href="#" title="Dribbble">
+                        <span class="fa fa-dribbble" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                    <li class="google">
+                      <a href="#" title="Google">
+                        <span class="fa fa-google" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <div class="row">
+                  <div class="col-sm-4 col-6 footer-list-28 mt-5">
+                    <h6 class="footer-title-28">Company</h6>
+                    <ul>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="blog.html">Blog Posts</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 col-6 footer-list-28 mt-5">
+                    <h6 class="footer-title-28">Quick Links</h6>
+                    <ul>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="#">Create account</a></li>
+                      <li><a href="#">Care Center</a></li>
+                      <li><a href="#">Site Feedack</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 footer-list-28 mt-5">
+                    <h6 class="footer-title-28">Support</h6>
+                    <ul>
+                      <li><a href="#">All Dogs</a></li>
+                      <li><a href="#">Care Advices</a></li>
+                      <li><a href="#">Care Support</a></li>
+                      <li><a href="#">Veterinary Help</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="midd-footer-28 align-center py-lg-4 py-3 mt-5">
+            <div class="container">
+              <p class="copy-footer-28 text-center">
+                &copy; 2022 Pooch Care. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
